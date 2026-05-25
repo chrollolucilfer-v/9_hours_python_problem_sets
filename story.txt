@@ -1,0 +1,11 @@
+Today I went to the <place> with my best friend <person_name>. 
+We saw a giant <animal> wearing a <color> hat and dancing near the <object>. 
+
+Suddenly, a <adjective> man started shouting, 
+"Someone stole my <food>!"
+
+We quickly ran toward the <vehicle> and escaped at <number> miles per hour. 
+On the way, we listened to <song_name> and ate <plural_food>. 
+
+At the end of the day, <person_name> said,
+"This was the most <adjective_2> adventure of my life!"

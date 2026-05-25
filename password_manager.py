@@ -1,7 +1,22 @@
 from cryptography.fernet import Fernet
 
+'''
+def write_key():
+    key = Fernet.generate_key()
+    with open("key.key", "wb") as key_file:
+        key_file.write(key)
+        '''
 
-pwd = input("Enter Your Master Password")
+def load_key():
+    file = open("key.key", "rb")
+    key = file.read()
+    file.close()
+    return key
+
+master_pwd = input("Enter Your Master Password")
+key = load_key() + master_pwd.bytes
+fer = Fernet(key)
+
 
 
 def add():
@@ -23,6 +38,7 @@ def view():
             print(f"Username is {user} \nPassword is {passw} ")
 
 def main():
+    
     while True:
         mode = input("Type 1 to view your passwords \nType 2 to add new passwords \nType 3 for Quiting ")
 
@@ -45,6 +61,8 @@ def main():
         else:
             print("Not a Choise")
             continue
+    
+
 
 
 main()
