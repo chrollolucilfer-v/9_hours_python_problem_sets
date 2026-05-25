@@ -2,12 +2,13 @@ import random
 
 
 while True:
-    num = int(input("Enter Your Range from 1 to :- ")).strip()
-    if num.isdigit() and num >1:
+    num = input("Enter Your Range from 1 to :- ")
+    if num.isdigit() and int(num) >1:
+        num = int(num)
         break
     else:
         print("enter a valid number")
-        continue
+        
 
 
 
